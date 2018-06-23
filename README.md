@@ -18,7 +18,7 @@ security tools, therefore 'implant' and 'agent' are interchangeable names.
 * and more 
 
 ## Server Features
-* TBD
+* Secure communications via TLS between server and implant 
 
 ## Building the Implant
 To build an implant, a Makefile was created to make it easy to build and clean 
