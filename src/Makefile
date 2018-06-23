@@ -20,5 +20,7 @@ clean:
 	rm -f $(BINARY_UNIX)
 
 # Cross platform build
+build-windows:
+	GOOS=windows GOARCH=amd64 $(GOBUILD) -o $(BINARY_NAME) -v
 build-linux:
 	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 $(GOBUILD) -o $(BINARY_UNIX) -v
