@@ -6,7 +6,7 @@ GOTEST=$(GOCMD) test
 GOGET=$(GOCMD) get
 
 # Binary Declarations
-BINARY_NAME=goc2agent
+BINARY_NAME=goc2implant
 BINARY_UNIX=$(BINARY_NAME)_unix
 
 all: test build
